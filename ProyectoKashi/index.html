@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/2.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="code.js" language="javascript" type="text/javascript"></script>
+        
+        <title>Oportunidad</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="img/1.png" alt=" logo" class="logo">
+               
+                <form action="#" class="search" style="visibility: hidden">
+                    <input type="text" class="search__input" placeholder="Search hotels">
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>
+
+                
+            </header>
+
+
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item side-nav__item--active">
+                            <a href="#" class="side-nav__link" onclick="nosotros()">
+                                <!-- <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                                </svg> -->
+                                <span>Nosotros</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link" onclick="proyectos()">
+                                <!-- <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                                </svg> -->
+                                <span>Proyectos</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link" onclick="donaciones()">
+                                <!-- <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-key"></use>
+                                </svg> -->
+                                <span>Donaciones</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link" onclick="contacto()">
+                                <!-- <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-map"></use>
+                                </svg> -->
+                                <span>Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                   
+                </nav>
+
+
+                <main class="hotel-view">
+                    
+                    <!-- <div class="overview">
+                        <h1 class="overview__heading">
+                            Hotel Las Palmas
+                        </h1>
+
+            
+                        <div class="overview__location">
+                            <svg class="overview__icon-location">
+                                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                            </svg>
+                            <button class="btn-inline">Albufeira, Portugal</button>
+                        </div>
+
+                        <div class="overview__rating">
+                            <div class="overview__rating-average">8.6</div>
+                            <div class="overview__rating-count">429 votes</div>
+                        </div>
+                    </div> -->
+
+                    <div id="nosotros" class="detail">
+                        <div class="description">
+                            <img src="img/ODS1.jpg" height="280rem"  > 
+                            
+                            <img src="img/children.jpg" height="280rem" > 
+                                                                              
+                            <ul class="list"> 
+                                <!-- <li class="list__item">
+                                                                  
+                                    Este proyecto se enfoca en el ODS 1, Fin de la pobreza, donde principalmente se aborda el tema de la pobreza infantil,
+                                    pues creemos que es importante buscar que cada niña y niño tengan una vida digna que cubra sus necesidades básicas, 
+                                    buscar que se respeten sus derechos y luchar por que tengan las mismas oportunidades. 
+                                    </li>
+                            
+                                <li class="list__item">Con este proyecto se busca facilitar donaciones y voluntariados a personas que esten interesadas, pero no esten muy seguras de como empezar</li> -->
+                                <h1>Acerca de Oportunidad</h1>
+                                <p class="paragraph">
+                                    Oportunidad nace como un proyecto escolar que se enfoca en el ODS 1, Fin de la pobreza, donde principalmente se aborda el tema de la pobreza infantil,
+                                    pues creemos que es importante buscar que cada niña y niño tengan una vida digna que cubra sus necesidades básicas, 
+                                    buscar que se respeten sus derechos y luchar por que tengan las mismas oportunidades. 
+                                </p>
+    
+                                <p class="paragrahp">
+                                    Este proyecto recopila en una base de datos distintos proyectos que se están llevando a cabo sobre esta problematica,
+                                     por medio de la consulta con filtros como ubicación, organización, tipo de apoyo, entre otros,
+                                    se busca facilitar donaciones y voluntariados a personas que esten interesadas, pero no esten muy seguras de como empezar.
+                           
+                            </ul> 
+                          
+                        </div>
+                       
+                            <!-- <button class="btn-inline">Show all <span>&rarr;</span></button> -->
+                      
+                        <!-- <div class="cta">
+                            <h2 class="cta__book-now">
+                                Good news! We have 4 free rooms for your selected dates!
+                            </h2>
+                            <button class="btn">
+                                <span class="btn__visible">Book now</span>
+                                <span class="btn__invisible">Only 4 rooms left</span>
+                            </button>
+                        </div> -->
+
+                    </div>
+
+                    <div id="proyectos" class="detail" style="display: none;">
+                        <div class="description">
+                        <h1>Proyectos actuales</h1>
+                        <br>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">Nombre del Proyecto</th>
+                                  <th scope="col">Organización</th>
+                                  <th scope="col">Descripción</th>
+                                  <th scope="col">Tipo de apoyo</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Más vidas sin pobreza</td>
+                                  <td>Organización Carlos Slim</td>
+                                  <td>Este proyecto busca crear un nuevo ambiente y hogar para las personas de bajos recursos de toda la república con ayuda de mano de obra y donativos que las personas realicen
+                                  </td>
+                                  <td>Monetario, En materia y Voluntariado</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                  <td>Monetario, En materia y Voluntariado</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td colspan="2">Larry the Bird</td>
+                                  <td>@twitter</td>
+                                  <td>Monetario, En materia y Voluntariado</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>Monetario, En materia y Voluntariado</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                    <td>Monetario, En materia y Voluntariado</td>
+                                  </tr>
+                                 
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>Monetario, En materia y Voluntariado</td>
+                                  </tr>
+                                  
+                                  <tr>
+                                   
+                                  </tr>
+                              </tbody>
+                          </table>
+                        </div>
+                    </div>
+
+                    <div id="donaciones" class="detail" style="display: none;">
+                        <div class="description">
+                    <h1>Tipos de donaciones</h1>
+                            <h2> Donaciones monetarias</h2>
+                            <h2> Donaciones en materia</h2>
+                            <h2> Voluntariados</h2>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
